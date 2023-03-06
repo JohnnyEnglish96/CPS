@@ -10,35 +10,54 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><img src="assets/icons/burger-menu.svg" alt="Меню"></li>
-                <li class="nav__item"><img src="assets/icons/CPS-logo.svg" alt="Лого"></li>
-                <li class="nav__item"><img src="assets/icons/nav-divider.svg" alt="Вертикальный разделитель"></li>
-                <li class="nav__item"><img src="assets/icons/repair.svg" alt="Оставить заявку"></li>
-                <li class="nav__item"><img src="assets/icons/checkstatus.svg" alt="Статус ремонта"></li>
+                <li>
+                    <ul class="nav-list__left-column">
+                        <li class="nav__item nav__item--menu"><img src="assets/icons/burger-menu.svg" alt="Меню"></li>
+                        <li class="nav__item nav-list__left-column--vertical-line"><img src="assets/icons/nav-divider.svg" alt="Вертикальный разделитель"></li>
+                        <li class="nav__item nav__item--logo"><img src="assets/icons/CPS-logo.svg" alt="Лого"></li>
+                    </ul>
+                </li>
+                <li class="nav__item nav__item--vertical-line"><img src="assets/icons/nav-divider.svg" alt="Вертикальный разделитель"></li>
+                <li>
+                    <ul class="nav-list__right-column">
+                        <li class="nav__item nav__item--call"><img src="assets/icons/call.svg" alt="Позвонить"></li>
+                        <li class="nav__item nav__item--chat"><img src="assets/icons/chat.svg" alt="Написать в чат"></li>
+                        <li class="nav__item nav__item--profile"><img src="assets/icons/profile.svg" alt="Профиль"></li>
+                        <li class="nav__item nav-list__right-column--vertical-line"><img src="assets/icons/nav-divider.svg" alt="Вертикальный разделитель"></li>
+                        <li class="nav__item nav__item--repair"><img src="assets/icons/repair.svg" alt="Оставить заявку"></li>
+                        <li class="nav__item nav__item--status"><img src="assets/icons/check-status.svg" alt="Статус ремонта"></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="main__header">
+        <section class="main__header">
             <div class="main-header__vertical-line"></div>
-            <h1 class="main__header--text">Услуги и сервисы</h1></div>
+            <h1 class="main__header--text">Услуги и сервисы</h1>
+        </section>
         <section class="main__features">
             <ul class="features-list">
-                <li class="features-list__item features-list__item--active">Ремонтируемые бренды</li>
-                <li class="features-list__item">Дополнительные услуги</li>
-                <li class="features-list__item hidden">Ремонтируемые устройства</li>
-                <li class="features-list__item hidden">Цены на услуги</li>
-                <li class="features-list__item hidden">Адреса сервисных центров</li>
-                <li class="features-list__item hidden">Специальные цены</li>
-                <li class="features-list__item hidden">Отзывы</li>
+                <li class="features-list__item features-list__item--brends">Ремонтируемые бренды</li>
+                <li class="features-list__item features-list__item--devices features-list__item--active">Ремонтируемые устройства</li>
+                <li class="features-list__item features-list__item--additional-service">Дополнительные услуги</li>
+                <li class="features-list__item features-list__item--prices">Цены на услуги</li>
+                <li class="features-list__item features-list__item--addresses">Адреса сервисных центров</li>
+                <li class="features-list__item features-list__item--special-prices">Специальные цены</li>
+                <li class="features-list__item features-list__item--feedback">Отзывы</li>
             </ul>
         </section>
-        <section class="main__content">
-            <p class="main__description">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            </p>
-            <button type="button" class="main__button">Читать далее</button>
-            <img src="assets/images/main-cps-pictire_small.jpg" alt="CPS" class="main__picture">
+        <section class="content-wrapper">
+            <section class="main__content">
+                <p class="main__description">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="main__description">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                </p>
+                <button type="button" class="main__button">Читать далее</button>
+            </section>
+            <img src="assets/images/main-cps-pictire_big.jpg" alt="CPS" class="main__picture">
         </section>
     </main>
 </body>
