@@ -2,30 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CPS</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><img src="assets/icons/burger-menu.svg" alt="Меню"></li>
-                <li class="nav__item nav__logo"><img src="assets/icons/CPS-logo.svg" alt="Лого"></li>
+                <li class="nav__item"><img src="assets/icons/CPS-logo.svg" alt="Лого"></li>
+                <li class="nav__item"><img src="assets/icons/nav-divider.svg" alt="Вертикальный разделитель"></li>
                 <li class="nav__item"><img src="assets/icons/repair.svg" alt="Оставить заявку"></li>
                 <li class="nav__item"><img src="assets/icons/checkstatus.svg" alt="Статус ремонта"></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <h1 class="main__header">Услуги и сервисы</h1>
+        <div class="main__header">
+            <div class="main-header__vertical-line"></div>
+            <h1 class="main__header--text">Услуги и сервисы</h1></div>
         <section class="main__features">
             <ul class="features-list">
                 <li class="features-list__item features-list__item--active">Ремонтируемые бренды</li>
-                <li class="features-list__item">Ремонтируемые устройства</li>
-                <li class="features-list__item">Цены на услуги</li>
-                <li class="features-list__item">Адреса сервисных центров</li>
-                <li class="features-list__item">Специальные цены</li>
-                <li class="features-list__item">Отзывы</li>
+                <li class="features-list__item">Дополнительные услуги</li>
+                <li class="features-list__item hidden">Ремонтируемые устройства</li>
+                <li class="features-list__item hidden">Цены на услуги</li>
+                <li class="features-list__item hidden">Адреса сервисных центров</li>
+                <li class="features-list__item hidden">Специальные цены</li>
+                <li class="features-list__item hidden">Отзывы</li>
             </ul>
         </section>
         <section class="main__content">

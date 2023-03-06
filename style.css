@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Medium'), local('TT-Lakes-Medium'),
+    url('assets/fonts/TTLakes-Medium/TTLakes-Medium.woff2') format('woff2'),
+    url('assets/fonts/TTLakes-Medium/TTLakes-Medium.woff') format('woff'),
+    url('assets/fonts/TTLakes-Medium/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Bold'), local('TT-Lakes-Bold'),
+    url('assets/fonts/TTLakesCondensed-Bold/TTLakesCondensed-Bold.woff2') format('woff2'),
+    url('assets/fonts/TTLakesCondensed-Bold/TTLakesCondensed-Bold.woff') format('woff'),
+    url('assets/fonts/TTLakesCondensed-Bold/TTLakesCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Black'), local('TT-Lakes-Black'),
+    url('assets/fonts/TTLakesCompressed-Black/TTLakesCompressed-Black.woff2') format('woff2'),
+    url('assets/fonts/TTLakesCompressed-Black/TTLakesCompressed-Black.woff') format('woff'),
+    url('assets/fonts/TTLakesCompressed-Black/TTLakesCompressed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+.header {
+    margin: 0 auto;
+    width: 320px;
+    height: 88px;
+}
+.nav {
+
+}
+.nav__list {
+    margin: 0;
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav__item {
+    margin-right: 16px;
+}
+.main {
+    border-top: 1px solid #D9FFF5;
+    margin: 0 auto;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color:  #F8F8F8;
+    width: 320px;
+    height: 510px;
+}
+.main__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+.main-header__vertical-line {
+    width: 4px;
+    height: 40px;
+    background-image: url("assets/icons/heading-vertical-line.svg");
+    margin-right: 16px;
+}
+.main__header--text {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1B1C21;
+    padding: 24px 0;
+}
+.main__features {
+    overflow: hidden;
+}
+.main__content {
+    margin-top: 0;
+}
+.main__description {
+    margin: 0 0 16px;
+    padding: 0 16px;
+}
+.main__button {
+    vertical-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    margin: 0 0 16px;
+}
+.main__button::before {
+    content: url("assets/icons/expand-button.svg");
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.main__picture {
+    margin-bottom: 35px;
+}
+.features-list {
+    margin: 0 0 10px 0;
+    padding: 0 16px 14px;
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+    list-style: none;
+}
+.features-list__item {
+    padding: 8px 16px;
+}
+.features-list__item--active {
+     background: #FFFFFF;
+     border: 2px solid #B8FFEC;
+     border-radius: 6px;
+}
+.hidden {
+    display: none;
+}
