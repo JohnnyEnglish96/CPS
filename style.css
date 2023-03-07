@@ -33,7 +33,7 @@ body {
 @media (min-width: 320px) {
     .header {
         margin: 0 auto;
-        width: 320px;
+        width: 100%;
         height: 88px;
     }
     .nav {
@@ -76,7 +76,7 @@ body {
         font-size: 16px;
         font-weight: 500;
         background-color:  #F8F8F8;
-        width: 320px;
+        width: 100%;
     }
     .main__header {
         display: flex;
@@ -84,18 +84,20 @@ body {
         align-items: center;
         margin: 0 auto;
     }
-    .main-header__vertical-line {
-        width: 4px;
-        height: 40px;
-        background-image: url("assets/icons/heading-vertical-line.svg");
-        margin-right: 16px;
-    }
     .main__header--text {
         margin: 0;
         font-size: 28px;
         font-weight: 700;
         color: #1B1C21;
-        padding: 24px 0;
+        padding: 24px 0 24px 16px;
+    }
+    .main__header--text::before {
+        content: url("assets/icons/heading-vertical-line.svg");
+        position: absolute;
+        margin: -1px 0 0 -16px;
+    }
+    .main__header--nav-list {
+        display: none;
     }
     .main__features {
         overflow: hidden;
@@ -107,7 +109,7 @@ body {
     .main__description {
         margin: 0 0 16px;
     }
-    .main__description:nth-child(2) {
+    .main__description--first-half, .main__description--second-half {
         display: none;
     }
     .main__button {
@@ -128,6 +130,8 @@ body {
         margin-right: 8px;
     }
     .main__picture {
+        display: block;
+        margin: 0 auto;
         width: 320px;
         height: 176px;
     }
@@ -138,7 +142,7 @@ body {
     }
     .features-list {
         margin: 0 0 10px 0;
-        padding: 0 16px 14px;
+        padding: 2px 16px 14px;
         color: #7E7E82;
         display: flex;
         white-space: nowrap;
@@ -150,9 +154,9 @@ body {
     .features-list__item {
         padding: 8px 16px;
     }
-    .features-list__item--active {
+    .features-list__item:hover {
         background: #FFFFFF;
-        border: 2px solid #B8FFEC;
+        outline: 2px solid #B8FFEC;
         border-radius: 6px;
     }
     .features-list__item--brends {
@@ -195,7 +199,7 @@ body {
 @media (min-width: 768px) {
     .header {
         margin: 0 auto;
-        width: 768px;
+        width: 100%;
         height: 88px;
     }
     .nav {
@@ -238,7 +242,7 @@ body {
         font-size: 16px;
         font-weight: 500;
         background-color:  #F8F8F8;
-        width: 768px;
+        width: 100%;
     }
     .main__header {
         display: flex;
@@ -246,18 +250,20 @@ body {
         align-items: center;
         margin: 0 auto;
     }
-    .main-header__vertical-line {
-        width: 4px;
-        height: 40px;
-        background-image: url("assets/icons/heading-vertical-line.svg");
-        margin-right: 24px;
-    }
     .main__header--text {
         margin: 0;
         font-size: 28px;
         font-weight: 700;
         color: #1B1C21;
-        padding: 24px 0;
+        padding: 24px 0 24px 24px;
+    }
+    .main__header--text::before {
+        content: url("assets/icons/heading-vertical-line.svg");
+        position: absolute;
+        margin: -1px 0 0 -24px;
+    }
+    .main__header--nav-list {
+        display: none;
     }
     .main__features {
         overflow: hidden;
@@ -274,8 +280,8 @@ body {
     .main__description {
         margin: 0 0 16px;
     }
-    .main__description:nth-child(2) {
-        display: block;
+    .main__description--first-half {
+        display: inline;
     }
     .main__button {
         vertical-align: center;
@@ -296,8 +302,9 @@ body {
     }
     .main__picture {
         width: 360px;
+        height: 208px;
+        border-radius: 6px;
         flex-basis: 0;
-        flex-grow: 1;
     }
     .content-wrapper {
         font-size: 14px;
@@ -308,7 +315,7 @@ body {
     }
     .features-list {
         margin: 0 0 10px 0;
-        padding: 0 24px 14px;
+        padding: 2px 24px 14px;
         color: #7E7E82;
         display: flex;
         white-space: nowrap;
@@ -319,6 +326,11 @@ body {
     }
     .features-list__item {
         padding: 8px 16px;
+    }
+    .features-list__item:hover {
+        background: #FFFFFF;
+        outline: 2px solid #B8FFEC;
+        border-radius: 6px;
     }
     .features-list__item--active {
         background: #FFFFFF;
@@ -366,25 +378,186 @@ body {
     }
 }
 @media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+    .nav {
+        font-family: "TT Lakes", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .nav__list {
+        margin: 0;
+        padding: 19px 24px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .nav-list__left-column {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .nav-list__right-column {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .nav__item {
+        margin-right: 16px;
+    }
+    .main {
+        border-top: none;
+        margin: 0 auto;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        background-color:  #F8F8F8;
+        width: 1120px;
+    }
+    .main__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+    .main__header--text {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+        color: #1B1C21;
+        padding: 10px 0 10px 32px;
+    }
+    .main__header--text::before {
+        content: url("assets/icons/heading-vertical-line.svg");
+        position: absolute;
+        margin: -1px 0 0 -32px;
+    }
+    .main__header--nav-list {
+        padding: 10px 0;
+        margin-right: 16px;
+    }
+    .main__features {
+        overflow: hidden;
+    }
+    .main__content {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 0;
+        flex-grow: 1;
+        padding: 0 48px 0 0;
+    }
+    .main__description {
+        margin: 0 0 16px;
+    }
+    .main__description--first-half, .main__description--second-half {
+        display: inline;
+    }
+    .main__button {
+        vertical-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        box-sizing: border-box;
+        height: 24px;
+        border: none;
+        background-color: transparent;
+        margin: 0 0 16px;
+    }
+    .main__button::before {
+        content: url("assets/icons/expand-button.svg");
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+    .main__picture {
+        width: 531px;
+        height: 307px;
+        border-radius: 6px;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .content-wrapper {
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        align-content: flex-start;
+        padding: 0 32px 40px;
+    }
     .features-list {
         margin: 0 0 10px 0;
-        padding: 0 16px 14px;
+        padding: 2px 32px;
+        color: #7E7E82;
         display: flex;
+        flex-wrap: wrap;
         white-space: nowrap;
         justify-content: space-between;
         align-items: center;
         overflow-x: hidden;
         list-style: none;
     }
-    .features-list:hover {
-        overflow-x: scroll;
-        padding-bottom: 9px;
+    .features-list__item {
+        padding: 8px 16px;
     }
-    .features-list::-webkit-scrollbar {
-        height: 5px;
-        background-color: #F8F8F8;
-    }.features-list::-webkit-scrollbar-thumb {
-         background: #41F6D7;
-         border-radius: 3px;
-     }
+    .features-list__item:hover {
+        background: #FFFFFF;
+        outline: 2px solid #B8FFEC;
+        border-radius: 6px;
+    }
+    .features-list__item--brends {
+        display: block;
+    }
+    .features-list__item--devices {
+        display: block;
+    }
+    .features-list__item--prices {
+        display: block;
+    }
+    .features-list__item--addresses {
+        display: block;
+    }
+    .features-list__item--special-prices {
+        display: block;
+    }
+    .features-list__item--feedback {
+        display: block;
+    }
+    .features-list__item--additional-service {
+        display: none;
+    }
+    .nav__item--vertical-line {
+        display: none;
+    }
+    .nav-list__left-column--vertical-line {
+        display: none;
+    }
+    .nav-list__right-column--vertical-line {
+        display: none;
+    }
+    .nav__item--repair {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav__item--status {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav__item--text {
+        margin-right: 8px;
+    }
 }
