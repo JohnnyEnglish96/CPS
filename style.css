@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    box-sizing: border-box;
-    color: #1B1C21;
-}
 @font-face {
     font-family: 'TT Lakes';
     src: local('TT Lakes Regular'), local('TT-Lakes-Medium'),
@@ -29,6 +24,11 @@ body {
     url('assets/fonts/TTLakes-Bold/TTLakesCondensed-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+}
+.body {
+    margin: 0;
+    box-sizing: border-box;
+    color: #1B1C21;
 }
 .header {
     margin: 0 auto;
