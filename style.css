@@ -35,6 +35,12 @@ body {
     width: 100%;
     height: 88px;
 }
+.vertical-line {
+    background-image: url("assets/icons/nav-divider.svg");
+    width: 2px;
+    height: 32px;
+    flex-shrink: 0;
+}
 .nav {
     font-family: "TT Lakes", sans-serif;
     font-size: 16px;
@@ -49,7 +55,7 @@ body {
     justify-content: space-between;
     list-style: none;
 }
-.nav-list__left-column {
+.nav__left-column {
     margin: 0;
     padding: 0;
     display: flex;
@@ -58,7 +64,7 @@ body {
     justify-content: space-between;
     list-style: none;
 }
-.nav-list__right-column {
+.nav__right-column {
     margin: 0;
     padding: 0;
     display: flex;
@@ -70,34 +76,52 @@ body {
 .nav__item {
     margin-right: 16px;
 }
+.nav__button {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.nav__button--logo {
+    width: 97px;
+    height: 51px;
+}
+.nav__item:hover {
+    cursor: pointer;
+}
+.nav__button:hover {
+    cursor: pointer;
+}
 .main {
     border-top: 1px solid #D9FFF5;
     margin: 0 auto;
     font-family: "TT Lakes", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    background-color:  #F8F8F8;
+    background-color: #F8F8F8;
     width: 100%;
 }
-.main__header {
+.main-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
 }
-.main__header--text {
+.main-header__text {
     margin: 0;
     font-size: 28px;
     font-weight: 700;
     color: #1B1C21;
     padding: 24px 0 24px 16px;
 }
-.main__header--text::before {
+.main-header__text::before {
     content: url("assets/icons/heading-vertical-line.svg");
     position: absolute;
     margin: -1px 0 0 -16px;
 }
-.main__header--nav-list {
+.main-header__nav-list {
     display: none;
 }
 .main__features {
@@ -117,14 +141,13 @@ body {
     display: none;
 }
 .main__button {
-    vertical-align: center;
     font-size: 16px;
     font-weight: 500;
     box-sizing: border-box;
-    height: 24px;
     border: none;
     background-color: transparent;
     margin: 0 0 16px;
+    padding-left: 0;
 }
 .main__button::before {
     content: url("assets/icons/expand-button.svg");
@@ -132,6 +155,14 @@ body {
     height: 24px;
     vertical-align: middle;
     margin-right: 8px;
+}
+.main__button:hover {
+    cursor: pointer;
+}
+.main__button:active {
+    background-color: #FFFFFF;
+    outline: 2px solid #B8FFEC;
+    border-radius: 6px;
 }
 .main__picture {
     display: block;
@@ -147,7 +178,6 @@ body {
 .features-list {
     margin: 0 0 10px 0;
     padding: 2px 16px 14px;
-    color: #7E7E82;
     display: flex;
     white-space: nowrap;
     justify-content: space-between;
@@ -155,20 +185,27 @@ body {
     overflow-x: scroll;
     list-style: none;
 }
-.features-list__item {
+.features-list__button {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7E7E82;
     padding: 8px 16px;
+    background-color: transparent;
+    border: none;
 }
-.features-list__item:hover {
-    background: #FFFFFF;
+.features-list__button:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
     outline: 2px solid #B8FFEC;
     border-radius: 6px;
 }
 .features-list__item--active {
     background: #FFFFFF;
-    border: 2px solid #B8FFEC;
+    outline: 2px solid #B8FFEC;
     border-radius: 6px;
 }
-.features-list__item--brends {
+.features-list__item--brands {
     display: none;
 }
 .features-list__item--devices {
@@ -189,10 +226,10 @@ body {
 .features-list__item--additional-service {
     display: block;
 }
-.nav-list__left-column--vertical-line {
+.nav__item--left-vertical-line {
     display: none;
 }
-.nav-list__right-column--vertical-line {
+.nav__item--right-vertical-line {
     display: none;
 }
 .nav__item--call {
@@ -208,10 +245,10 @@ body {
     .nav__list {
         padding: 19px 24px;
     }
-    .main__header--text {
+    .main-header__text {
         padding: 24px 0 24px 24px;
     }
-    .main__header--text::before {
+    .main-header__text::before {
         margin: -1px 0 0 -24px;
     }
     .main__content {
@@ -223,6 +260,7 @@ body {
         padding: 0 48px 0 0;
     }
     .main__description--first-half {
+        margin: 0;
         display: inline;
     }
     .main__picture {
@@ -239,24 +277,19 @@ body {
     .features-list {
         padding: 2px 24px 14px;
     }
-    .features-list__item:hover {
-        background: #FFFFFF;
-        outline: 2px solid #B8FFEC;
-        border-radius: 6px;
-    }
     .features-list__item--prices {
         display: block;
     }
     .features-list__item--special-prices {
         display: block;
     }
-    .nav__item--vertical-line {
+    .nav__item--middle-vertical-line {
         display: none;
     }
-    .nav-list__left-column--vertical-line {
+    .nav__item--left-vertical-line {
         display: block;
     }
-    .nav-list__right-column--vertical-line {
+    .nav__item--right-vertical-line {
         display: block;
     }
     .nav__item--call {
@@ -277,17 +310,17 @@ body {
         border-top: none;
         width: 1120px;
     }
-    .main__header {
+    .main-header {
         justify-content: space-between;
         padding-top: 30px;
     }
-    .main__header--text {
+    .main-header__text {
         padding: 10px 0 10px 32px;
     }
-    .main__header--text::before {
+    .main-header__text::before {
         margin: -1px 0 0 -32px;
     }
-    .main__header--nav-list {
+    .main-header__nav-list {
         display: flex;
         padding: 10px 0;
         margin-right: 16px;
@@ -301,9 +334,11 @@ body {
         padding: 0 48px 0 0;
     }
     .main__description--first-half {
+        margin: 0;
         display: inline;
     }
     .main__description--second-half {
+        margin: 0;
         display: inline;
     }
     .main__picture {
@@ -323,12 +358,7 @@ body {
         flex-wrap: wrap;
         overflow-x: hidden;
     }
-    .features-list__item:hover {
-        background: #FFFFFF;
-        outline: 2px solid #B8FFEC;
-        border-radius: 6px;
-    }
-    .features-list__item--brends {
+    .features-list__item--brands {
         display: block;
     }
     .features-list__item--prices {
@@ -356,7 +386,7 @@ body {
         align-items: center;
         justify-content: space-between;
     }
-    .nav__item--text {
+    .nav__text {
         margin-right: 8px;
     }
 }

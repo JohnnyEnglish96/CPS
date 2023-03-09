@@ -11,43 +11,46 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li>
-                    <ul class="nav-list__left-column">
-                        <li class="nav__item nav__item--menu"><img src="assets/icons/burger-menu.svg" alt="Меню"></li>
-                        <li class="nav__item nav-list__left-column--vertical-line"><img src="assets/icons/nav-divider.svg" alt="Вертикальный разделитель"></li>
-                        <li class="nav__item nav__item--logo"><img src="assets/icons/CPS-logo.svg" alt="Лого"></li>
+                    <ul class="nav__left-column">
+                        <li class="nav__item nav__item--menu"><button type="button" class="nav__button"><img src="assets/icons/burger-menu.svg" alt="Меню"></button></li>
+                        <li class="nav__item nav__item--left-vertical-line vertical-line"></li>
+                        <li class="nav__item nav__item--logo"><button type="button" class="nav__button nav__button--logo"><img src="assets/icons/CPS-logo.svg" alt="Лого"></button></li>
                     </ul>
                 </li>
-                <li class="nav__item nav__item--vertical-line"><img src="assets/icons/nav-divider.svg" alt="Вертикальный разделитель"></li>
+                <li class="nav__item nav__item--middle-vertical-line vertical-line"></li>
                 <li>
-                    <ul class="nav-list__right-column">
-                        <li class="nav__item nav__item--call"><img src="assets/icons/call.svg" alt="Позвонить"></li>
-                        <li class="nav__item nav__item--chat"><img src="assets/icons/chat.svg" alt="Написать в чат"></li>
-                        <li class="nav__item nav__item--profile"><img src="assets/icons/profile.svg" alt="Профиль"></li>
-                        <li class="nav__item nav-list__right-column--vertical-line"><img src="assets/icons/nav-divider.svg" alt="Вертикальный разделитель"></li>
-                        <li class="nav__item nav__item--repair"><img src="assets/icons/repair.svg" alt="Оставить заявку"></li>
-                        <li class="nav__item nav__item--status"><img src="assets/icons/check-status.svg" alt="Статус ремонта"></li>
+                    <ul class="nav__right-column">
+                        <li class="nav__item nav__item--call"><button type="button" class="nav__button"><img src="assets/icons/call.svg" alt="Позвонить"></button></li>
+                        <li class="nav__item nav__item--chat"><button type="button" class="nav__button"><img src="assets/icons/chat.svg" alt="Написать в чат"></button></li>
+                        <li class="nav__item nav__item--profile"><button type="button" class="nav__button"><img src="assets/icons/profile.svg" alt="Профиль"></button></li>
+                        <li class="nav__item nav__item--right-vertical-line vertical-line"></li>
+                        <li class="nav__item nav__item--repair"><button type="button" class="nav__button"><img src="assets/icons/repair.svg" alt="Оставить заявку"></button></li>
+                        <li class="nav__item nav__item--status"><button type="button" class="nav__button"><img src="assets/icons/check-status.svg" alt="Статус ремонта"></button></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <section class="main__header">
-            <h1 class="main__header--text">Услуги и сервисы</h1>
-            <ul class="nav__list main__header--nav-list">
-                <li class="nav__item nav__item--repair"><span class="nav__item--text">Оставить заявку</span><img src="assets/icons/repair.svg" alt="Оставить заявку"></li>
-                <li class="nav__item nav__item--status"><span class="nav__item--text">Статус ремонта</span><img src="assets/icons/check-status.svg" alt="Статус ремонта"></li>
-            </ul>
+        <section class="main-header">
+            <h1 class="main-header__text">Услуги и сервисы</h1>
+            <nav class="nav">
+                <ul class="nav__list main-header__nav-list">
+                    <li class="nav__item nav__item--repair"><span class="nav__text">Оставить заявку</span><button type="button" class="nav__button"><img src="assets/icons/repair.svg" alt="Оставить заявку"></button></li>
+                    <li class="nav__item nav__item--status"><span class="nav__text">Статус ремонта</span><button type="button" class="nav__button"><img src="assets/icons/check-status.svg" alt="Статус ремонта"></button></li>
+                </ul>
+            </nav>
+
         </section>
         <section class="main__features">
             <ul class="features-list">
-                <li class="features-list__item features-list__item--brends">Ремонтируемые бренды</li>
-                <li class="features-list__item features-list__item--devices">Ремонтируемые устройства</li>
-                <li class="features-list__item features-list__item--additional-service">Дополнительные услуги</li>
-                <li class="features-list__item features-list__item--prices">Цены на услуги</li>
-                <li class="features-list__item features-list__item--addresses">Адреса сервисных центров</li>
-                <li class="features-list__item features-list__item--special-prices">Специальные цены</li>
-                <li class="features-list__item features-list__item--feedback">Отзывы</li>
+                <li class="features-list__item features-list__item--brands"><button type="button" class="features-list__button">Ремонтируемые бренды</button></li>
+                <li class="features-list__item features-list__item--devices"><button type="button" class="features-list__button">Ремонтируемые устройства</button></li>
+                <li class="features-list__item features-list__item--additional-service"><button type="button" class="features-list__button">Дополнительные услуги</button></li>
+                <li class="features-list__item features-list__item--prices"><button type="button" class="features-list__button">Цены на услуги</button></li>
+                <li class="features-list__item features-list__item--addresses"><button type="button" class="features-list__button">Адреса сервисных центров</button></li>
+                <li class="features-list__item features-list__item--special-prices"><button type="button" class="features-list__button">Специальные цены</button></li>
+                <li class="features-list__item features-list__item--feedback"><button type="button" class="features-list__button">Отзывы</button></li>
             </ul>
         </section>
         <section class="content-wrapper">
@@ -56,7 +59,7 @@
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                 </p>
                 <p class="main__description">
-                    <span class="main__description--first-half">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span><span class="main__description--second-half">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+                    <span class="main__description main__description--first-half">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span><span class="main__description main__description--second-half">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                 </p>
                 <button type="button" class="main__button">Читать далее</button>
             </section>
