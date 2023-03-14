@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Блок 1.4</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  фывфыв
+<body class="body">
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li>
+                <ul class="nav__left-column">
+                    <li class="nav__item nav__item--menu"><button type="button" class="nav__button"><img src="../assets/icons/burger-menu.svg" alt="Меню"></button></li>
+                    <li class="nav__item nav__item--left-vertical-line vertical-line"></li>
+                    <li class="nav__item nav__item--logo"><button type="button" class="nav__button nav__button--logo"><img src="../assets/icons/CPS-logo.svg" alt="Лого"></button></li>
+                    <li class="nav__item nav__item--search"><button type="button" class="nav__button"><img src="../assets/icons/search.png" alt="Лого"></button></li>
+                </ul>
+            </li>
+            <li class="nav__item nav__item--middle-vertical-line vertical-line"></li>
+            <li>
+                <ul class="nav__right-column">
+                    <li class="nav__item nav__item--call"><button type="button" class="nav__button"><img src="../assets/icons/call.svg" alt="Позвонить"></button></li>
+                    <li class="nav__item nav__item--chat"><button type="button" class="nav__button"><img src="../assets/icons/chat.svg" alt="Написать в чат"></button></li>
+                    <li class="nav__item nav__item--profile"><button type="button" class="nav__button"><img src="../assets/icons/profile.svg" alt="Профиль"></button></li>
+                    <li class="nav__item nav__item--right-vertical-line vertical-line"></li>
+                    <li class="nav__item nav__item--repair"><button type="button" class="nav__button"><img src="../assets/icons/repair.svg" alt="Оставить заявку"></button></li>
+                    <li class="nav__item nav__item--status"><button type="button" class="nav__button"><img src="../assets/icons/check-status.svg" alt="Статус ремонта"></button></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="contacts">
+        <h2 class="contacts__text">Контакты</h2>
+        <p class="contacts__email">mail@cps.com</p>
+        <p class="contacts__phone">8 800 890 8900</p>
+        <ul class="contacts__lang-list">
+            <li class="contacts__item contacts__item--active">RU</li>
+            <li class="contacts__item">EN</li>
+            <li class="contacts__item">CH</li>
+        </ul>
+    </section>
+</header>
 </body>
 </html>

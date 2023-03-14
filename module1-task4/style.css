@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Regular'), local('TT-Lakes-Medium'),
+    url('../assets/fonts/TTLakes-Regular/TTLakes-Regular.woff2') format('woff2'),
+    url('../assets/fonts/TTLakes-Regular/TTLakes-Regular.woff') format('woff'),
+    url('../assets/fonts/TTLakes-Regular/TTLakes-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Medium'), local('TT-Lakes-Medium'),
+    url('../assets/fonts/TTLakes-Medium/TTLakes-Medium.woff2') format('woff2'),
+    url('../assets/fonts/TTLakes-Medium/TTLakes-Medium.woff') format('woff'),
+    url('../assets/fonts/TTLakes-Medium/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Bold'), local('TT-Lakes-Bold'),
+    url('../assets/fonts/TTLakes-Bold/TTLakesCondensed-Bold.woff2') format('woff2'),
+    url('../assets/fonts/TTLakes-Bold/TTLakesCondensed-Bold.woff') format('woff'),
+    url('../assets/fonts/TTLakes-Bold/TTLakesCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+.body {
+    margin: 0;
+    box-sizing: border-box;
+    color: #1B1C21;
+    font-family: "TT Lakes", sans-serif;
+}
+.header {
+    margin: 0;
+    width: 320px;
+    height: 88px;
+}
+.vertical-line {
+    background-image: url("../assets/icons/nav-divider.svg");
+    width: 2px;
+    height: 32px;
+    flex-shrink: 0;
+}
+.nav {
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav__list {
+    margin: 0 0 16px 0;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav__left-column {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+.nav__right-column {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+.nav__item {
+    margin-right: 16px;
+}
+.nav__item:last-child {
+    margin-right: 0;
+}
+.nav__button--logo {
+    width: 97px;
+    height: 51px;
+}
+.nav__item:hover {
+    cursor: pointer;
+}
+.nav__button:hover {
+    cursor: pointer;
+}
+.nav__item--left-vertical-line {
+    display: none;
+}
+.nav__item--right-vertical-line {
+    display: none;
+}
+.nav__item--middle-vertical-line {
+    display: none;
+}
+.nav__item--call {
+    display: block;
+}
+.nav__item--chat {
+    display: block;
+}
+.nav__item--profile {
+    display: block;
+}
+.nav__item--search {
+    margin-left: auto;
+}
+.nav__button {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav__item--repair {
+    display: none;
+}
+.nav__item--status {
+    display: none;
+}
+.nav__text {
+    margin-right: 8px;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+.contacts__text {
+    display: none;
+}
+.contacts__email {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+}
+.contacts__phone {
+    margin: 0 0 40px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.contacts__lang-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.contacts__item {
+    cursor: pointer;
+    margin-right: 7px;
+}
+.contacts__item--active {
+    color: #7E7E82;
+}
