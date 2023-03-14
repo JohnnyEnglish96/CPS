@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Блок 1.3</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li>
+                    <ul class="nav__left-column">
+                        <li class="nav__item nav__item--menu"><button type="button" class="nav__button"><img src="../assets/icons/burger-menu.svg" alt="Меню"></button></li>
+                        <li class="nav__item nav__item--left-vertical-line vertical-line"></li>
+                        <li class="nav__item nav__item--logo"><button type="button" class="nav__button nav__button--logo"><img src="../assets/icons/CPS-logo.svg" alt="Лого"></button></li>
+                    </ul>
+                </li>
+                <li class="nav__item nav__item--middle-vertical-line vertical-line"></li>
+                <li>
+                    <ul class="nav__right-column">
+                        <li class="nav__item nav__item--call"><button type="button" class="nav__button"><img src="../assets/icons/call.svg" alt="Позвонить"></button></li>
+                        <li class="nav__item nav__item--chat"><button type="button" class="nav__button"><img src="../assets/icons/chat.svg" alt="Написать в чат"></button></li>
+                        <li class="nav__item nav__item--profile"><button type="button" class="nav__button"><img src="../assets/icons/profile.svg" alt="Профиль"></button></li>
+                        <li class="nav__item nav__item--right-vertical-line vertical-line"></li>
+                        <li class="nav__item nav__item--repair"><button type="button" class="nav__button"><img src="../assets/icons/repair.svg" alt="Оставить заявку"></button></li>
+                        <li class="nav__item nav__item--status"><button type="button" class="nav__button"><img src="../assets/icons/check-status.svg" alt="Статус ремонта"></button></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main-header">
+            <h1 class="main-header__text">Услуги и сервисы</h1>
+            <nav class="nav">
+                <ul class="nav__list main-header__nav-list">
+                    <li class="nav__item nav__item--repair"><button type="button" class="nav__button"><span class="nav__text">Оставить заявку</span><img src="../assets/icons/repair.svg" alt="Оставить заявку"></button></li>
+                    <li class="nav__item nav__item--status"><button type="button" class="nav__button"><span class="nav__text">Статус ремонта</span><img src="../assets/icons/check-status.svg" alt="Статус ремонта"></button></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="main__features">
+            <h2 class="visually-hidden">Информация о продуктах, условия и отзывы</h2>
+            <ul class="features-list">
+                <li class="features-list__item features-list__item--brands"><button type="button" class="features-list__button">Ремонтируемые бренды</button></li>
+                <li class="features-list__item features-list__item--devices"><button type="button" class="features-list__button">Ремонтируемые устройства</button></li>
+                <li class="features-list__item features-list__item--additional-service"><button type="button" class="features-list__button">Дополнительные услуги</button></li>
+                <li class="features-list__item features-list__item--prices"><button type="button" class="features-list__button">Цены на услуги</button></li>
+                <li class="features-list__item features-list__item--addresses"><button type="button" class="features-list__button">Адреса сервисных центров</button></li>
+                <li class="features-list__item features-list__item--special-prices"><button type="button" class="features-list__button">Специальные цены</button></li>
+                <li class="features-list__item features-list__item--feedback"><button type="button" class="features-list__button">Отзывы</button></li>
+            </ul>
+        </section>
+        <div class="content-wrapper">
+            <section class="main__content">
+                <h2 class="visually-hidden">Информация о компании</h2>
+                <p class="main__description">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="main__description">
+                    <span class="main__description main__description--first-half">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span><span class="main__description main__description--second-half">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+                </p>
+                <button type="button" class="main__button">Читать далее</button>
+            </section>
+            <img src="../assets/images/main-cps-picture.jpg" alt="CPS" class="main__picture">
+        </div>
+    </main>
+</body>
+</html>
