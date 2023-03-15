@@ -56,7 +56,10 @@
     justify-content: space-between;
     list-style: none;
 }
-.nav__section:last-child {
+.nav-bottom-part__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     position: absolute;
     bottom: 32px;
 }
