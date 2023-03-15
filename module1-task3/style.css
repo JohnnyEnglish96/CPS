@@ -117,7 +117,7 @@
     padding: 24px 0 24px 16px;
 }
 .main-header__text::before {
-    content: url("../assets/icons/heading-vertical-line.svg");
+    content: url("../assets/icons/heading-line.svg");
     position: absolute;
     margin: -1px 0 0 -16px;
 }

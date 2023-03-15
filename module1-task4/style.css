@@ -191,7 +191,7 @@
 }
 .menu__item--active::before {
     content: "";
-    background-image: url("/assets/icons/heading-vertical-line.svg");
+    background-image: url("/assets/icons/heading-line.svg");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
