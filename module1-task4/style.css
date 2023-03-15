@@ -189,6 +189,11 @@
 .nav__button--active {
     color: #7E7E82;
 }
+.nav__button--active:hover {
+    color: #7E7E82;
+    cursor: default;
+    transform: none;
+}
 .nav__button--active::before {
     content: "";
     background-image: url("../assets/icons/heading-line.svg");
