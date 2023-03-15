@@ -186,10 +186,10 @@
     margin-bottom: 32px;
     position: relative;
 }
-.menu__item--active {
+.nav__button--active {
     color: #7E7E82;
 }
-.menu__item--active::before {
+.nav__button--active::before {
     content: "";
     background-image: url("../assets/icons/heading-line.svg");
     background-size: contain;
