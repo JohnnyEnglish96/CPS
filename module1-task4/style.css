@@ -85,6 +85,17 @@
 .nav__item:last-child {
     margin-right: 0;
 }
+.nav__img {
+    min-width: 40px;
+    min-height: 40px;
+    transition-duration: 0.2s;
+}
+.nav__img:hover {
+    filter: invert(1);
+}
+.nav__img--logo:hover {
+    filter: none;
+}
 .nav__button--logo {
     width: 97px;
     height: 51px;
@@ -120,7 +131,7 @@
     margin-left: auto;
 }
 .nav__button {
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     background-color: transparent;
     margin: 0;
     padding: 0;
