@@ -45,10 +45,13 @@
     flex-shrink: 0;
 }
 .nav {
+    height: 100%;
     font-size: 16px;
     font-weight: 500;
+    display: flex;
 }
 .nav__list {
+    width: 100%;
     margin: 0;
     padding: 24px 24px 32px 24px;
     display: flex;
@@ -56,12 +59,13 @@
     justify-content: space-between;
     list-style: none;
 }
+.nav-bottom-part {
+    margin-top: auto;
+}
 .nav-bottom-part__list {
     margin: 0;
     padding: 0;
     list-style: none;
-    position: absolute;
-    bottom: 32px;
 }
 .nav__left-column {
     margin: 0 0 50px 0;
@@ -99,6 +103,10 @@
 .nav__button--logo {
     width: 97px;
     height: 51px;
+}
+.nav__button--round {
+    min-height: 40px;
+    min-width: 40px;
 }
 .nav__button:hover {
     cursor: pointer;
