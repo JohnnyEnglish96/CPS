@@ -32,11 +32,12 @@
     font-family: "TT Lakes", sans-serif;
 }
 .header {
-    position: absolute;
+    position: fixed;
     margin: 0;
     width: 320px;
     height: 100%;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
+    overflow: auto;
 }
 .vertical-line {
     background-image: url("../assets/icons/nav-divider.svg");
