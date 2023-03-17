@@ -32,10 +32,10 @@
     font-family: "TT Lakes", sans-serif;
 }
 .header {
-    position: fixed;
+    position: sticky;
     margin: 0;
     width: 320px;
-    height: 100%;
+    min-height: 100vh;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
     overflow: auto;
 }
@@ -46,7 +46,7 @@
     flex-shrink: 0;
 }
 .nav {
-    height: 100%;
+    min-height: 100vh;
     font-size: 16px;
     font-weight: 500;
     display: flex;
